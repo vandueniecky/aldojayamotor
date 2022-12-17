@@ -12,6 +12,10 @@ $(document).ready(function(){
             $('#loading').fadeOut(2000)
         });
         $('#productVario, #productPCX').hide();
+        
+        $('.productBeat').addClass('redon');
+        $('.productVario').removeClass('redon');
+        $('.productPCX').removeClass('redon');
     })
 
     $('#btnVario').click(function(){
@@ -22,6 +26,10 @@ $(document).ready(function(){
             $('#loading').fadeOut(2000)
         });   
         $('#productBeat, #productPCX').hide();
+
+        $('.productBeat').removeClass('redon');
+        $('.productVario').addClass('redon');
+        $('.productPCX').removeClass('redon');
     })
 
     $('#btnPCX').click(function(){
@@ -32,6 +40,10 @@ $(document).ready(function(){
             $('#loading').fadeOut(2000)
         });   
         $('#productBeat, #productVario').hide();
+
+        $('.productBeat').removeClass('redon');
+        $('.productVario').removeClass('redon');
+        $('.productPCX').addClass('redon');
     })
 
 });

@@ -125,8 +125,6 @@
 }
 
 .col-md-1 {
-    flex: 0 0 auto;
-    width: 10%;
     padding: 0 0 10px;
 }
 
@@ -145,6 +143,21 @@
 
 .btn {
     border-radius: 1rem;
+}
+
+.btnProduct {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color:#a0a0a0;
+}
+
+.btnProduct:hover {
+    color: black;
+}
+
+.productBeat.redon, .productVario.redon, .productPCX.redon {
+    color: red;
 }
 /* Akhir Style */
 
@@ -174,10 +187,6 @@
 /* Akhir Style */
 
 @media (min-width: 1400px) {
-    .col-md-1 {
-        flex: 0 0 auto;
-        width: 0%;
-    }
 }
 
 
@@ -195,24 +204,12 @@
 	.dropdown:hover .dropdown-menu {
         display: block;
     }
-
-    .col-md-1 {
-        flex: 0 0 auto;
-        width: 5%;
-    }
 }
 
 @media (min-width: 768px) {
-    .col-md-1 {
-        flex: 0 0 auto;
-        width: 5%;
-    }
 }
 
 @media (min-width: 576px) {
-    .col-md-1 {
-        flex: 0 0 auto;
-    }
 }
 
 
