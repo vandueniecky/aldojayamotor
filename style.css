@@ -1,0 +1,219 @@
+/* Style Sponsorship */
+.sponsorship {
+	padding: 1.5em 0;
+	background-color: #fff;
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logohonda,.logoajm {
+	width: 110px;
+	height: 30;
+}
+
+.sponsor.ymh {
+	margin-left: auto;
+}
+/* Akhir Style */
+
+/* Style Navbar */
+.navbar {
+    background: #1d1e22;
+    font-family: Manrope, sans-serif !important;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+
+.navbar-toggler {
+    box-shadow: none !important;
+    position: relative;
+    display: flex;
+    width: 50px;
+    height: 32px;
+    border: none;
+}
+
+.navbar-toggler.collapsed .a,
+.navbar-toggler.collapsed .b,
+.navbar-toggler.collapsed .c {
+    content: '';
+    position: absolute !important;
+    width: 50%;
+    height: 2px;
+    background: #fff;
+    transition: all 0.5s;
+}
+
+.navbar-toggler .a,
+.navbar-toggler .b,
+.navbar-toggler .c {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background: crimson;
+    transition: all 0.5s;
+}
+
+.navbar-toggler.collapsed .a {
+    top: 20%;
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .b {
+    top: 46%;
+    transform: translate(0);
+    transition: 1.0s;
+    opacity: 1;
+}
+
+.navbar-toggler.collapsed .c {
+    top: 76%;
+    transform: rotate(0);
+}
+
+.navbar-toggler .a {
+    transform: rotate(45deg);
+    transform-origin: center;
+    top: 50%;
+}
+
+.navbar-toggler .b {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: 0.5s;
+    top: 50%;
+}
+
+.navbar-toggler .c {
+    transform: rotate(-45deg);
+    transform-origin: center;
+    top: 50%;
+}
+
+.dropdown-menu {
+    position: absolute !important;
+    text-align: center;
+}
+/* Akhir Style */
+
+/* Style Section Carouse / Slide */
+/* Akhir Style */
+
+/* Style Section Product */
+.product {
+    padding-top: 5rem;
+}
+
+.prorduct .container .title {
+    color: black;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.col-md-1 {
+    flex: 0 0 auto;
+    width: 10%;
+    padding: 0 0 10px;
+}
+
+#productBeat, #productVario {
+    display: block;
+}
+
+.card-text {
+    color: #555555;
+}
+
+.card-price {
+    color: black;
+    font-weight: bold;
+}
+
+.btn {
+    border-radius: 1rem;
+}
+/* Akhir Style */
+
+/* Style Footer */
+.footerTop {
+    background-color: #282828;
+    color: #fff;
+    height: Auto;
+}
+
+.footerTop .contact {
+    padding: 20px;
+    margin-bottom: 0%;
+}
+
+.footerBottom {
+    background-color: #353535;
+    color: #fff;
+    width: 100%;
+    height: auto;
+}
+
+.footerBottom .text-footer  {
+    margin: 0%;
+    padding: 20px;
+}
+/* Akhir Style */
+
+@media (min-width: 1400px) {
+    .col-md-1 {
+        flex: 0 0 auto;
+        width: 0%;
+    }
+}
+
+
+@media (min-width: 992px) {
+	.sponsorship .container {
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+
+	.logohonda, .logoyamaha {
+		width: 320px;
+		height: 60px;
+	}
+
+	.dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .col-md-1 {
+        flex: 0 0 auto;
+        width: 5%;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-1 {
+        flex: 0 0 auto;
+        width: 5%;
+    }
+}
+
+@media (min-width: 576px) {
+    .col-md-1 {
+        flex: 0 0 auto;
+    }
+}
+
+
+
