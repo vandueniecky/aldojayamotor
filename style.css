@@ -118,9 +118,9 @@
     padding-top: 5rem;
 }
 
-.prorduct .container .title {
+.product .container .title {
     color: black;
-    font-size: 32px;
+    font-size: 18px !important;
     font-weight: bold;
 }
 
@@ -128,8 +128,17 @@
     padding: 0 0 10px;
 }
 
-#productBeat, #productVario {
+#productBeat, #productGenio, #productScoopy {
     display: block;
+}
+
+.card-title, .card-series {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 24px;
+    margin: 0px;
 }
 
 .card-text {
@@ -138,6 +147,7 @@
 
 .card-price {
     color: black;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -156,7 +166,7 @@
     color: black;
 }
 
-.productBeat.redon, .productVario.redon, .productPCX.redon {
+.productBeat.redon, .productGenio.redon, .productScoopy.redon {
     color: red;
 }
 /* Akhir Style */
@@ -189,6 +199,8 @@
 @media (min-width: 1400px) {
 }
 
+@media (min-width: 1200px) {
+}
 
 @media (min-width: 992px) {
 	.sponsorship .container {
@@ -204,12 +216,25 @@
 	.dropdown:hover .dropdown-menu {
         display: block;
     }
+
+    
+    .product .container .title {
+        font-size: 32px !important;
+    }
 }
 
+
+
 @media (min-width: 768px) {
+    .product .container .title {
+        font-size: 24px !important;
+    }
 }
 
 @media (min-width: 576px) {
+    .card {
+        width: 100% !important;
+    }
 }
 
 

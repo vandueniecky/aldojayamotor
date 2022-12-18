@@ -1,7 +1,9 @@
 $(document).ready(function(){
 
     // Hide All Product
-    $('#productVario, #productPCX, #loading').hide();
+    $('#productGenio, #productScoopy, #loading').hide();
+
+    $('.productBeat').addClass('redon');
 
     // Show Produck On Click
     $('#btnBeat').click(function(){
@@ -11,39 +13,39 @@ $(document).ready(function(){
         $('#loading').show(0000, function(){
             $('#loading').fadeOut(2000)
         });
-        $('#productVario, #productPCX').hide();
+        $('#productGenio, #productScoopy').hide();
         
         $('.productBeat').addClass('redon');
-        $('.productVario').removeClass('redon');
-        $('.productPCX').removeClass('redon');
+        $('.productGenio').removeClass('redon');
+        $('.productScoopy').removeClass('redon');
     })
 
-    $('#btnVario').click(function(){
-        $('#productVario').hide(0000, function(){
-            $('#productVario').fadeIn(4000)
+    $('#btnGenio').click(function(){
+        $('#productGenio').hide(0000, function(){
+            $('#productGenio').fadeIn(4000)
         });    
         $('#loading').show(0000, function(){
             $('#loading').fadeOut(2000)
         });   
-        $('#productBeat, #productPCX').hide();
+        $('#productBeat, #productScoopy').hide();
 
         $('.productBeat').removeClass('redon');
-        $('.productVario').addClass('redon');
-        $('.productPCX').removeClass('redon');
+        $('.productGenio').addClass('redon');
+        $('.productScoopy').removeClass('redon');
     })
 
-    $('#btnPCX').click(function(){
-        $('#productPCX').hide(0000, function(){
-            $('#productPCX').fadeIn(4000)
-        });
+    $('#btnScoopy').click(function(){
+        $('#productScoopy').hide(0000, function(){
+            $('#productScoopy').fadeIn(4000)
+        });    
         $('#loading').show(0000, function(){
             $('#loading').fadeOut(2000)
-        });   
-        $('#productBeat, #productVario').hide();
+        });
+        $('#productBeat, #productGenio').hide();
 
         $('.productBeat').removeClass('redon');
-        $('.productVario').removeClass('redon');
-        $('.productPCX').addClass('redon');
+        $('.productGenio').removeClass('redon');
+        $('.productScoopy').addClass('redon');
     })
 
 });
