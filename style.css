@@ -128,7 +128,7 @@
     padding: 0 0 10px;
 }
 
-#productBeat, #productGenio, #productScoopy {
+#productBeat, #productGenio, #productScoopy, #productVario {
     display: block;
 }
 
@@ -166,7 +166,7 @@
     color: black;
 }
 
-.productBeat.redon, .productGenio.redon, .productScoopy.redon {
+.productBeat.redon, .productGenio.redon, .productScoopy.redon, .productVario.redon {
     color: red;
 }
 /* Akhir Style */

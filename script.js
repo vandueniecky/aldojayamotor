@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     // Hide All Product
-    $('#productGenio, #productScoopy, #loading').hide();
+    $('#productGenio, #productScoopy, #productVario, #loading').hide();
 
     $('.productBeat').addClass('redon');
 
@@ -13,11 +13,12 @@ $(document).ready(function(){
         $('#loading').show(0000, function(){
             $('#loading').fadeOut(2000)
         });
-        $('#productGenio, #productScoopy').hide();
+        $('#productGenio, #productScoopy, #productVario').hide();
         
         $('.productBeat').addClass('redon');
         $('.productGenio').removeClass('redon');
         $('.productScoopy').removeClass('redon');
+        $('.productVario').removeClass('redon');
     })
 
     $('#btnGenio').click(function(){
@@ -27,11 +28,12 @@ $(document).ready(function(){
         $('#loading').show(0000, function(){
             $('#loading').fadeOut(2000)
         });   
-        $('#productBeat, #productScoopy').hide();
+        $('#productBeat, #productScoopy, #productVario').hide();
 
         $('.productBeat').removeClass('redon');
         $('.productGenio').addClass('redon');
         $('.productScoopy').removeClass('redon');
+        $('.productVario').removeClass('redon');
     })
 
     $('#btnScoopy').click(function(){
@@ -41,11 +43,26 @@ $(document).ready(function(){
         $('#loading').show(0000, function(){
             $('#loading').fadeOut(2000)
         });
-        $('#productBeat, #productGenio').hide();
+        $('#productBeat, #productGenio, #productVario').hide();
 
         $('.productBeat').removeClass('redon');
         $('.productGenio').removeClass('redon');
         $('.productScoopy').addClass('redon');
+        $('.productVario').removeClass('redon');
     })
+    
+    $('#btnVario').click(function(){
+        $('#productVario').hide(0000, function(){
+            $('#productVario').fadeIn(4000)
+        });    
+        $('#loading').show(0000, function(){
+            $('#loading').fadeOut(2000)
+        });
+        $('#productBeat, #productGenio, #productScoopy').hide();
 
+        $('.productBeat').removeClass('redon');
+        $('.productGenio').removeClass('redon');
+        $('.productScoopy').removeClass('redon');
+        $('.productVario').addClass('redon');
+    })
 });
