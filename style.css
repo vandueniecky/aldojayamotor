@@ -138,7 +138,6 @@
 
 .card-title {
     font-size: 24px;
-    margin: 0px;
 }
 
 .card-text {
@@ -223,19 +222,57 @@
     }
 }
 
-
-
 @media (min-width: 768px) {
     .product .container .title {
         font-size: 24px !important;
     }
 }
 
-@media (min-width: 576px) {
-    .card {
-        width: 100% !important;
+@media (max-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 50%; 
     }
 }
+
+@media (max-width: 576px) {
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 50%;
+        margin: 0px;
+        padding: 2px;
+        
+    }
+
+    .card-title {
+        font-size: x-large;
+        margin: 0px;
+    }
+
+    .card-series {
+        font-size: small;
+        margin: 0 0 20px;
+    }
+
+    .card-text {
+        font-size: x-small;
+    }
+    
+    .card-price {
+        font-size: small;
+    }
+
+    .col-md-6 .card button {
+        width: 100%;
+        margin: 0px;
+        padding: 1px;
+    }
+
+    .col-md-6 .card button:hover {
+        color: #fff;
+    }
+}
+
 
 
 
