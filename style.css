@@ -113,10 +113,6 @@
 }
 /* Akhir Style */
 
-/* Style Section Carouse / Slide */
-/* Akhir Style */
-
-/* Style Section Product */
 
 .navbar-bottom {
     margin-top: 1rem;
@@ -145,6 +141,28 @@
     color: rgb(0, 0, 0) !important;
 }
 
+/* Style Section Carouse / Slide */
+.container#varianwarna {
+    width: 75%;
+}
+
+.container#varianwarna .carousel-indicators {
+    position: relative;
+/* right: 0; */
+/* bottom: 0; */
+/* left: 0; */
+/* z-index: 2; */
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    list-style: none;
+}
+/* Akhir Style */
+
+/* Style Section Product */
 .product {
     padding-top: 6rem;
 }
@@ -226,7 +244,7 @@
 }
 /* Akhir Style */
 
-@media (min-width: 1400px) {
+@media (min-width: 1400px) {   
 }
 
 @media (min-width: 1200px) {
@@ -246,11 +264,19 @@
 	.dropdown:hover .dropdown-menu {
         display: block;
     }
+    
+    .container#varianwarna {
+        width: 40%;
+    }
 }
 
 @media (min-width: 768px) {
     .product .container .title {
         font-size: 34px !important;
+    }
+
+    .container#varianwarna {
+        width: 40%;
     }
 }
 
