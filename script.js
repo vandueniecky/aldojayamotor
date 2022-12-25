@@ -66,3 +66,8 @@ $(document).ready(function(){
         $('.productVario').addClass('redon');
     })
 });
+
+// click trigger
+$('.scroll-trigger').click(function() {
+    $('.navbar-collapse').collapse('hide');
+});

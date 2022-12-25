@@ -74,14 +74,14 @@
 }
 
 .navbar-toggler.collapsed .b {
-    top: 46%;
+    top: 50%;
     transform: translate(0);
     transition: 1.0s;
     opacity: 1;
 }
 
 .navbar-toggler.collapsed .c {
-    top: 76%;
+    top: 70%;
     transform: rotate(0);
 }
 
