@@ -246,16 +246,11 @@
 	.dropdown:hover .dropdown-menu {
         display: block;
     }
-
-    
-    .product .container .title {
-        font-size: 32px !important;
-    }
 }
 
 @media (min-width: 768px) {
     .product .container .title {
-        font-size: 24px !important;
+        font-size: 34px !important;
     }
 }
 

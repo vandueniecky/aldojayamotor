@@ -1,7 +1,7 @@
 $('product.html#beranda').ready(function(){
 
     // Hide All Product
-    $('#productGenio, #productScoopy, #productVario, #productPcx, #productAdv, #loading').hide();
+    $('#productGenio, #productScoopy, #productVario, #productPcx, #productAdv, #loading, #showHide').hide();
 
     $('.productBeat').addClass('redon');
 
