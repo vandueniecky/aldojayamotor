@@ -117,6 +117,34 @@
 /* Akhir Style */
 
 /* Style Section Product */
+
+.navbar-bottom {
+    margin-top: 1rem;
+    background-color: #f0f0f0;
+}
+
+.navbar-bottom .navbar-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-bottom .nav-link {
+    text-decoration: none;
+    color: #707070;
+}
+
+.navbar-bottom .nav-link.active {
+    color: #ff0000;
+}
+
+.navbar-bottom .nav-link.active:hover {
+    color: #ff0000 !important;
+}
+
+.navbar-bottom .nav-link:hover {
+    color: rgb(0, 0, 0) !important;
+}
+
 .product {
     padding-top: 6rem;
 }
@@ -131,7 +159,7 @@
     padding: 0 0 10px;
 }
 
-#productBeat, #productGenio, #productScoopy, #productVario {
+#productBeat, #productGenio, #productScoopy, #productVario, #productPcx, #productAdv {
     display: block;
 }
 
@@ -168,7 +196,7 @@
     color: black;
 }
 
-.productBeat.redon, .productGenio.redon, .productScoopy.redon, .productVario.redon {
+.productBeat.redon, .productGenio.redon, .productScoopy.redon, .productVario.redon, .productPcx.redon, .productAdv.redon {
     color: red;
 }
 /* Akhir Style */
@@ -244,7 +272,6 @@
         width: 50%;
         margin: 0px;
         padding: 3px;
-        
     }
 
     .card-body {
@@ -278,6 +305,7 @@
     .col-md-6 .card button:hover {
         color: #fff;
     }
+
 }
 
 

@@ -1,7 +1,7 @@
-$(document).ready(function(){
+$('product.html#beranda').ready(function(){
 
     // Hide All Product
-    $('#productGenio, #productScoopy, #productVario, #loading').hide();
+    $('#productGenio, #productScoopy, #productVario, #productPcx, #productAdv, #loading').hide();
 
     $('.productBeat').addClass('redon');
 
@@ -13,12 +13,14 @@ $(document).ready(function(){
         $('#loading').show(0000, function(){
             $('#loading').fadeOut(2000)
         });
-        $('#productGenio, #productScoopy, #productVario').hide();
+        $('#productGenio, #productScoopy, #productVario, #productPcx, #productAdv').hide();
         
         $('.productBeat').addClass('redon');
         $('.productGenio').removeClass('redon');
         $('.productScoopy').removeClass('redon');
         $('.productVario').removeClass('redon');
+        $('.productPcx').removeClass('redon');
+        $('.productAdv').removeClass('redon');
     })
 
     $('#btnGenio').click(function(){
@@ -28,12 +30,14 @@ $(document).ready(function(){
         $('#loading').show(0000, function(){
             $('#loading').fadeOut(2000)
         });   
-        $('#productBeat, #productScoopy, #productVario').hide();
+        $('#productBeat, #productScoopy, #productVario, #productPcx, #productAdv').hide();
 
         $('.productBeat').removeClass('redon');
         $('.productGenio').addClass('redon');
         $('.productScoopy').removeClass('redon');
         $('.productVario').removeClass('redon');
+        $('.productPcx').removeClass('redon');
+        $('.productAdv').removeClass('redon');
     })
 
     $('#btnScoopy').click(function(){
@@ -43,12 +47,14 @@ $(document).ready(function(){
         $('#loading').show(0000, function(){
             $('#loading').fadeOut(2000)
         });
-        $('#productBeat, #productGenio, #productVario').hide();
+        $('#productBeat, #productGenio, #productVario, #productPcx, #productAdv').hide();
 
         $('.productBeat').removeClass('redon');
         $('.productGenio').removeClass('redon');
         $('.productScoopy').addClass('redon');
         $('.productVario').removeClass('redon');
+        $('.productPcx').removeClass('redon');
+        $('.productAdv').removeClass('redon');
     })
     
     $('#btnVario').click(function(){
@@ -58,12 +64,48 @@ $(document).ready(function(){
         $('#loading').show(0000, function(){
             $('#loading').fadeOut(2000)
         });
-        $('#productBeat, #productGenio, #productScoopy').hide();
+        $('#productBeat, #productGenio, #productScoopy, #productPcx, #productAdv').hide();
 
         $('.productBeat').removeClass('redon');
         $('.productGenio').removeClass('redon');
         $('.productScoopy').removeClass('redon');
         $('.productVario').addClass('redon');
+        $('.productPcx').removeClass('redon');
+        $('.productAdv').removeClass('redon');
+    })
+
+    $('#btnPcx').click(function(){
+        $('#productPcx').hide(0000, function(){
+            $('#productPcx').fadeIn(4000)
+        });    
+        $('#loading').show(0000, function(){
+            $('#loading').fadeOut(2000)
+        });
+        $('#productBeat, #productGenio, #productScoopy, #productVario, #productAdv').hide();
+
+        $('.productBeat').removeClass('redon');
+        $('.productGenio').removeClass('redon');
+        $('.productScoopy').removeClass('redon');
+        $('.productVario').removeClass('redon');
+        $('.productPcx').addClass('redon');
+        $('.productAdv').removeClass('redon');
+    })
+
+    $('#btnAdv').click(function(){
+        $('#productAdv').hide(0000, function(){
+            $('#productAdv').fadeIn(4000)
+        });    
+        $('#loading').show(0000, function(){
+            $('#loading').fadeOut(2000)
+        });
+        $('#productBeat, #productGenio, #productScoopy, #productVario, #productPcx').hide();
+
+        $('.productBeat').removeClass('redon');
+        $('.productGenio').removeClass('redon');
+        $('.productScoopy').removeClass('redon');
+        $('.productVario').removeClass('redon');
+        $('.productPcx').removeClass('redon');
+        $('.productAdv').addClass('redon');
     })
 });
 
