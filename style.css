@@ -317,7 +317,7 @@
         font-size: small;
     }
 
-    .col-md-6 .card button {
+    .col-md-6 .card .btn {
         width: 100%;
         margin: 0px;
         padding: 1px;
