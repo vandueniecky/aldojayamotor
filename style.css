@@ -131,8 +131,12 @@
     padding: 1rem;
 }
 
+.breadcrumb-item.active {
+    color: red;
+}
+
 .breadcrumb-link {
-    color: #555555;
+    color: black;
     text-decoration: none;
 }
 
@@ -236,7 +240,7 @@
 }
 
 .image-fitur {
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -275,13 +279,13 @@
 
 .popuptagg {
     position: absolute;
-    top: 10%;
-    left: 6%;
+    top: 5%;
+    left: 5%;
     z-index: 10;
     overflow: hidden;
 }
 
-.popuptagg .card {
+.card.popuptagg {
     width: 60%;
 }
 /* Akhir Style Fitur */
