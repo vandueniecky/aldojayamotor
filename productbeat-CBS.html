@@ -54,7 +54,7 @@
                         <a class="nav-link scroll-trigger" href="index.html#beranda">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll-trigger" href="#beranda">Product</a>
+                        <a class="nav-link scroll-trigger" href="product.html#beranda">Product</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link scroll-trigger" href="#">Promo</a>
@@ -78,27 +78,17 @@
     <!-- End Navbar -->
 
     <!-- Section Compass -->
-    <nav class="navbar-bottom navbar-expand-md">
+    <nav class="navbar-bottom" aria-label="breadcrumb">
         <div class="container">
-            <div class="navbar-collapse">
-                <ul class="navbar-nav text-start">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#beranda">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <span><i class="nav-link disabled bi bi-chevron-right"></i></span>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="product.html#beranda">Product</a>
-                    </li>
-                    <li class="nav-item">
-                        <span><i class="nav-link disabled bi bi-chevron-right"></i></span>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="productbeat-CBS.html#beranda">BeAT CBS Series</a>
-                    </li>
-                </ul>
-            </div>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html#beranda" class="breadcrumb-link">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="product.html#beranda" class="breadcrumb-link">Product</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">BeAT CBS</li>
+            </ol>
         </div>
     </nav>
     <!-- End Compass -->
@@ -183,13 +173,27 @@
                     <h1>Fitur Honda Beat</h1>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <img src="img/fitur/fitur-Beat.png" class="d-block" alt="">
+            <div class="image-fitur text-center">
+                <div class="tagg">
+                    <div class="tagg">
+                        <img src="img/fitur/fitur-Beat.png" class="tagg-img" alt="">
+                        <div class="icon" style="top: 6%; left: 60%;">
+                            <button type="button" class="tagg-btn text-center"></button>
+                        </div>
+                        <div class="popuptagg">
+                            <div class="card">
+                                <img src="img/fitur/fitur1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Combined Digital Panel Meter</h5>
+                                    <p class="card-text">Semakin stylish dengan panel meter yang canggih dilengkapi lampu indikator ECO untuk kemudahan informasi berkendara.* *Hanya untuk BeAT tipe CBS dan CBS-ISS.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row justify-content-center text-center">
-                <div class="col-md-6">
+                <div class="col-md-8">
                     <button type="button" class="btn btn-secondary m-5 p-3 disabled"><i class="bi bi-info-circle-fill"></i> Sorot kursor untuk melihat detail fiture</button>
                 </div>
             </div>

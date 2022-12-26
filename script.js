@@ -113,3 +113,8 @@ $('product.html#beranda').ready(function(){
 $('.scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
 });
+
+let tagging = document.getElementById('tagg1');
+
+tagging.addEventListener("mouseenter", (e) =>{
+});
