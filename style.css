@@ -276,13 +276,13 @@
 .popuptagg {
     position: absolute;
     top: 10%;
-    left: 10%;
+    left: 5%;
     z-index: 10;
     overflow: hidden;
 }
 
 .popuptagg .card {
-    width: 50%;
+    width: 60%;
 }
 /* Akhir Style Fitur */
 
