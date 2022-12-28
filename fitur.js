@@ -1,25 +1,27 @@
 let taggOne = document.getElementById('tagg1');
 let popupOne = document.getElementById('popuptagg1');
 let taggTwo = document.getElementById('tagg2');
-let popupTwo = document.getElementById('popuptagg2')
+let popupTwo = document.getElementById('popuptagg2');
 let taggThree = document.getElementById('tagg3');
-let popupThree = document.getElementById('popuptagg3')
+let popupThree = document.getElementById('popuptagg3');
 let taggFour = document.getElementById('tagg4');
-let popupFour = document.getElementById('popuptagg4')
+let popupFour = document.getElementById('popuptagg4');
 let taggFive = document.getElementById('tagg5');
-let popupFive = document.getElementById('popuptagg5')
+let popupFive = document.getElementById('popuptagg5');
 let taggSix = document.getElementById('tagg6');
-let popupSix = document.getElementById('popuptagg6')
+let popupSix = document.getElementById('popuptagg6');
 let taggSeven = document.getElementById('tagg7');
-let popupSeven = document.getElementById('popuptagg7')
+let popupSeven = document.getElementById('popuptagg7');
 let taggEight = document.getElementById('tagg8');
-let popupEight = document.getElementById('popuptagg8')
+let popupEight = document.getElementById('popuptagg8');
 let taggNine = document.getElementById('tagg9');
-let popupNine = document.getElementById('popuptagg9')
+let popupNine = document.getElementById('popuptagg9');
 let taggTen = document.getElementById('tagg10');
-let popupTen = document.getElementById('popuptagg10')
+let popupTen = document.getElementById('popuptagg10');
 let taggEleven = document.getElementById('tagg11');
-let popupEleven = document.getElementById('popuptagg11')
+let popupEleven = document.getElementById('popuptagg11');
+let taggTwelve = document.getElementById('tagg12');
+let popupTwelve = document.getElementById('popuptagg12');
 // Batas
 
 taggOne.addEventListener("mouseenter", (e) =>{
@@ -46,14 +48,6 @@ taggTwo.addEventListener("mouseenter", (e) =>{
 });
 
 taggTwo.addEventListener("mouseleave", (e) =>{
-    $('#popuptagg2').hide();
-});
-
-popupTwo.addEventListener("mouseenter", () =>{
-    $('#popuptagg2').show();
-});
-
-popupTwo.addEventListener("mouseleave", () =>{
     setTimeout(() => {
         $('#popuptagg2').hide();
     }, 1000);
@@ -65,6 +59,14 @@ taggThree.addEventListener("mouseenter", (e) =>{
 });
 
 taggThree.addEventListener("mouseleave", (e) =>{
+    $('#popuptagg3').hide();
+});
+
+popupThree.addEventListener("mouseenter", () =>{
+    $('#popuptagg3').show();
+});
+
+popupThree.addEventListener("mouseleave", () =>{
     setTimeout(() => {
         $('#popuptagg3').hide();
     }, 1000);
@@ -203,5 +205,24 @@ popupEleven.addEventListener("mouseenter", () =>{
 popupEleven.addEventListener("mouseleave", () =>{
     setTimeout(() => {
         $('#popuptagg11').hide();
+    }, 1000);
+});
+// Batas
+
+taggTwelve.addEventListener("mouseenter", (e) =>{
+    $('#popuptagg12').show();
+});
+
+taggTwelve.addEventListener("mouseleave", (e) =>{
+    $('#popuptagg12').hide();
+});
+
+popupTwelve.addEventListener("mouseenter", () =>{
+    $('#popuptagg12').show();
+});
+
+popupTwelve.addEventListener("mouseleave", () =>{
+    setTimeout(() => {
+        $('#popuptagg12').hide();
     }, 1000);
 });
